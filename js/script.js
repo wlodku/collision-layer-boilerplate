@@ -63,13 +63,13 @@ function collision(rect1, rect2) {
     }
 }
 
-//3. Template for a method who compares players cords with every object from collidingObjects array
+//3. Template for a function which compares players cords with every object from collidingObjects array
 function isCollision(player, obstacles) {            
     obstacles.forEach(element => {        
         if(collision(player, element)) {                
             console.log('bang');                       
         }                        
-    });    
+    });        
 }
 
 
